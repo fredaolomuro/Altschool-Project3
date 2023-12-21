@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+:root {
+  --CL-Green: #2ec4b6;
+  --white: #fff;
+  --input-border: #f0f0f0;
+  --label-text: #011c34;
+  --black: #000;
+  --CL-black: #000b0a;
+  --CL-Grey: #737373;
+  --web-background: #f7fdfc;
+}
+
+.container {
+  width: 100%;
+  background: #f7fdfc;
+}
+
+.nav {
+  display: none;
+}
+
+.main__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__one__wrapper {
+  padding: 12.81rem 0 0 8.75rem;
+}
+
+.logo {
+  width: 4.83331rem;
+}
+
+.content__one__wrapper h2 {
+  color: var(--CL-Black);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 3.12rem;
+  letter-spacing: -0.05rem;
+}
+
+.content__one__wrapper p {
+  width: 25rem;
+  padding-top: 1.25rem;
+  color: var(--CL-Grey);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+}
+
+.mobile__text {
+  display: none;
+}
+/* CONTENT TWO STYLING */
+
+.content__two__wrapper {
+  width: 36.25rem;
+  height: 42.4375rem;
+  border-radius: 0.375rem;
+  background: var(--white);
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  margin: 5.06rem 8.75rem 5rem 0;
+  padding: 2.5rem;
+}
+
+.form label {
+  color: var(--label-text);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.00625rem;
+}
+
+.name__input__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.name__input__wrapper input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14.875rem;
+  height: 3rem;
+  margin-top: 0.62rem;
+  border-radius: 0.2rem;
+}
+
+.firstname__input {
+  border: 1px solid var(--CL-Green);
+  color: #011c34;
+}
+
+.firstname__input::placeholder {
+  color: #011c34;
+}
+
+.lastname__input {
+  border: 1px solid var(--input-border);
+}
+
+.gender__wrapper {
+  display: flex;
+  align-items: center;
+  flex: column;
+  gap: 1.5rem;
+  margin-top: 1.88rem;
+}
+
+.gender select {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14.875rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 1px solid var(--input-border);
+  margin-top: 0.62rem;
+  padding-left: 1rem;
+  color: var(--CL-Grey);
+  border-radius: 0.2rem;
+}
+
+.date__of__birth input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14.875rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 1px solid var(--input-border);
+  margin-top: 0.62rem;
+  padding-left: 1rem;
+  color: var(--CL-Grey);
+  border-radius: 0.2rem;
+}
+
+.weight__wrapper {
+  display: flex;
+  align-items: center;
+  flex: column;
+  gap: 1.5rem;
+  margin-top: 1.88rem;
+}
+
+::placeholder {
+  padding-left: 1rem;
+  color: var(--CL-Grey);
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.weight__wrapper input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14.875rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 1px solid var(--input-border);
+  margin-top: 0.62rem;
+  border-radius: 0.2rem;
+}
+
+.activity__level {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 1.88rem;
+}
+
+.activity__level select {
+  margin-top: 0.62rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 1px solid var(--input-border);
+  color: var(--CL-Grey);
+  border-radius: 0.2rem;
+}
+
+.password__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 1.88rem;
+  position: relative;
+}
+
+.password__wrapper input {
+  margin-top: 0.62rem;
+  height: 3rem;
+  border: 1px solid var(--input-border);
+  border-radius: 0.2rem;
+}
+
+.eye{
+    position: absolute;
+    top: 55%;
+    right: 4%;
+}
+
+.submit {
+  margin-top: 1.88rem;
+  width: 100%;
+  padding: 1rem 0;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.0125rem;
+  background-color: var(--CL-Green);
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.terms__wrapper {
+  margin-top: 1rem;
+  color: var(--black);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+}
+
+.terms__wrapper > .terms {
+  color: var(--CL-Green);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.terms__wrapper > .privacy {
+  color: var(--CL-Green);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .content__one__wrapper {
+    padding: 12.81rem 0 0 4.75rem;
+  }
+}
+
+@media (max-width: 1075px) {
+  .content__two__wrapper {
+    width: 36.25rem;
+    height: 42.4375rem;
+    border-radius: 0.375rem;
+    background: var(--white);
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+    margin: 5.06rem 8.75rem 5rem 0;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  .name__input__wrapper input,
+  .gender__wrapper input,
+  .gender__wrapper select,
+  .weight__wrapper input {
+    width: 13.875rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .content__one__wrapper {
+    padding: 12.81rem 0 0 3.75rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .content__one__wrapper {
+    padding: 12.81rem 0 0 2.75rem;
+  }
+}
+
+@media (max-width: 955px) {
+  .name__input__wrapper input,
+  .gender__wrapper select,
+  .gender__wrapper input,
+  .weight__wrapper input {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .name__input__wrapper input,
+  .gender__wrapper select,
+  .gender__wrapper input,
+  .weight__wrapper input {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 895px) {
+  .name__input__wrapper input,
+  .gender__wrapper select,
+  .gender__wrapper input,
+  .weight__wrapper input {
+    width: 11rem;
+  }
+}
+
+@media (max-width: 865px) {
+  .name__input__wrapper input,
+  .gender__wrapper select,
+  .gender__wrapper input,
+  .weight__wrapper input {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .main__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .content__one__wrapper {
+    padding: 2.5rem 0 0 8.75rem;
+  }
+
+  .content__two__wrapper {
+    margin-left: 8rem;
+  }
+  .name__input__wrapper input,
+  .gender__wrapper select,
+  .gender__wrapper input,
+  .weight__wrapper input {
+    width: 15.875rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .content__one__wrapper {
+    padding: 2.5rem 0 0 4rem;
+  }
+
+  .content__two__wrapper {
+    margin-left: 4.3rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .name__input__wrapper input,
+  .gender__wrapper select,
+  .gender__wrapper input,
+  .weight__wrapper input {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .name__input__wrapper input,
+  .gender__wrapper select,
+  .gender__wrapper input,
+  .weight__wrapper input {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .name__input__wrapper input,
+  .gender__wrapper select,
+  .gender__wrapper input,
+  .weight__wrapper input {
+    width: 11rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .name__input__wrapper input,
+  .gender__wrapper select,
+  .gender__wrapper input,
+  .weight__wrapper input {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content__one__wrapper {
+    padding: 2.5rem 0 0 5rem;
+  }
+
+  .content__two__wrapper {
+    margin-left: 5rem;
+  }
+
+  .form input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav__icon__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.88rem 1.25rem 0.75rem 1.25rem;
+  }
+
+  .nav__icon__wrapper h3 {
+    color: #011c34;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.125rem;
+    letter-spacing: -0.01031rem;
+  }
+
+  .content__one__wrapper h2 {
+    margin-top: 2.5rem;
+  }
+
+  .content__one__wrapper p {
+    display: none;
+  }
+
+  .mobile__text {
+    display: block;
+    color: var(--CL-Grey);
+    font-size: 1rem;
+    margin-top: 0.75rem;
+    font-weight: 400;
+    letter-spacing: -0.05rem;
+  }
+
+  .content__two__wrapper{
+    width: 20.4375rem;
+     height: 57rem;
+  }
+
+  .name__input__wrapper,
+  .gender__wrapper,
+  .weight__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .name__input__wrapper input,
+  .gender__wrapper input,
+  .gender__wrapper select,
+  .weight__wrapper input{
+    width: 18.4375rem;
+  }
+
+  .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .terms__wrapper{
+    padding-top: 1.5rem;
+  }
+}
+
+@media(max-width: 436px){
+    .content__one__wrapper {
+        padding: 2.5rem 0 0 3rem;
+      }
+    
+      .content__two__wrapper {
+        margin-left: 3rem;
+      }
+}
+
+
+@media(max-width: 400px){
+    .content__one__wrapper {
+        padding: 2.5rem 0 0 2rem;
+      }
+    
+      .content__two__wrapper {
+        margin-left: 2rem;
+      }
+}
+
+@media(max-width: 370px){
+    .content__one__wrapper {
+        padding: 2.5rem 0 0 1.5rem;
+      }
+    
+      .content__two__wrapper {
+        margin-left: 1rem;
+      }
+}
+
+@media(max-width: 360px){
+    .name__input__wrapper input,
+  .gender__wrapper input,
+  .gender__wrapper select,
+  .weight__wrapper input{
+    width: 17rem;
+  }
+}
+
+@media(max-width: 330px){
+    .name__input__wrapper input,
+  .gender__wrapper input,
+  .gender__wrapper select,
+  .weight__wrapper input{
+    width: 16rem;
+  }
+}
+
+@media(max-width: 320px){
+    .name__input__wrapper input,
+  .gender__wrapper input,
+  .gender__wrapper select,
+  .weight__wrapper input{
+    width: 14rem;
+  }
+}
